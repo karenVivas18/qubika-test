@@ -15,5 +15,10 @@
     "@types/node": "^20.14.2",
     "allure-playwright": "^3.0.4",
     "mochawesome": "^7.1.3"
+  },
+  "dependencies": {
+    "chrome-launcher": "^1.1.2",
+    "lighthouse": "^12.2.1"
   }
+  
 }

@@ -14,7 +14,7 @@ test.describe("Responsiveness Tests", () => {
   test.beforeAll(async ({ browser }) => {
     const page = await browser.newPage(); // Define page variable
     homePage = new HomePage(page);
-    productPage = new ProductPage(page);
+    productPage = new ProductPage(page); 
     cartPage = new CartPage(page);
     signUpPage = new SignUpPage(page);
   });
