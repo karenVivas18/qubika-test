@@ -1,9 +1,11 @@
 {
-  "name": "playwright",
+  "name": "Test-Qubika",
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "playwright test"
+    "test": "playwright test",             // Ejecutar pruebas en modo headless
+    "test:ui": "npx playwright test --headed", // Ejecutar pruebas con navegador visible
+    "clean:install": "rimraf node_modules && npm install" // Limpieza completa
   },
   "keywords": [],
   "author": "",
@@ -14,11 +16,15 @@
     "@playwright/test": "^1.47.2",
     "@types/node": "^20.14.2",
     "allure-playwright": "^3.0.4",
-    "mochawesome": "^7.1.3"
+    "mochawesome": "^7.1.3",
+    "prettier": "^3.4.2",
+    "dotenv": "^16.4.7",
+    "rimraf": "^5.0.1"
+
   },
   "dependencies": {
     "chrome-launcher": "^1.1.2",
+    "dotenv": "^16.4.7",
     "lighthouse": "^12.2.1"
   }
-  
 }
