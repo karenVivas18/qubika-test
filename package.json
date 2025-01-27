@@ -1,11 +1,13 @@
 {
+
   "name": "Test-Qubika",
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "playwright test",             // Ejecutar pruebas en modo headless
-    "test:ui": "npx playwright test --headed", // Ejecutar pruebas con navegador visible
-    "clean:install": "rimraf node_modules && npm install" // Limpieza completa
+    "test": "playwright test",
+    "test:ui": "npx playwright test --headed",
+    "clean:install": "rimraf node_modules && npm install"
+
   },
   "keywords": [],
   "author": "",
@@ -26,5 +28,8 @@
     "chrome-launcher": "^1.1.2",
     "dotenv": "^16.4.7",
     "lighthouse": "^12.2.1"
+
+    "@playwright/test": "^1.50.0",
+    "rimraf": "^6.0.1"
   }
 }
